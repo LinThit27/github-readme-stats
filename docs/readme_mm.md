@@ -75,8 +75,8 @@
 # Features <!-- omit in toc -->
 
 - [GitHub Stats ကတ်](#github-stats-card)
-    - [တစ်ဦးချင်း stats များကိုဝှက်ထားခြင်း](#hiding-individual-stats)
-    - [နောက်ထပ် တစ်ဦးချင်း များကိုပြသခြင်း](#showing-additional-individual-stats)
+    - [Hiding individual stats](#hiding-individual-stats)
+    - [Showing additional individual stats](#showing-additional-individual-stats)
     - [Icons များကိုပြသခြင်း](#showing-icons)
     - [အပြင်အဆင်များ](#themes)
     - [စိတ်ကြိုက်ပြင်ဆင်ခြင်း](#customization)
@@ -136,7 +136,7 @@
 > [!NOTE]\
 > Available ranks are S (top 1%), A+ (12.5%), A (25%), A- (37.5%), B+ (50%), B (62.5%), B- (75%), C+ (87.5%) and C (everyone). This ranking scheme is based on the [Japanese academic grading](https://wikipedia.org/wiki/Academic_grading_in_Japan) system. The global percentile is calculated as a weighted sum of percentiles for each statistic (number of commits, pull requests, reviews, issues, stars and followers), based on the cumulative distribution function of the [exponential](https://wikipedia.org/wiki/exponential_distribution) and the [log-normal](https://wikipedia.org/wiki/Log-normal_distribution) distributions. The implementation can be investigated at [src/calculateRank.js](https://github.com/anuraghazra/github-readme-stats/blob/master/src/calculateRank.js). The circle around the rank shows 100 minus the global percentile.
 
-### တစ်ဦးချင်း stats များကိုဝှက်ထားခြင်း
+### Hiding individual stats
 
 query parameter `&hide=` ကိုထည့်ပေးပြီး comma ဖြင့် hide ချင်သောတန်ဖိုးအားထည့်ပေးနိုင်ပါသည်။
 
@@ -198,7 +198,7 @@ We have included a `transparent` theme that has a transparent background. This t
 ```
 
 <details>
-<summary>:eyes: Show example</summary>
+<summary>:eyes: ဥပမာကြည့်ရန်</summary>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=transparent)
 
@@ -213,7 +213,7 @@ You can use the `bg_color` parameter to make any of [the available themes](theme
 ```
 
 <details>
-<summary>:eyes: Show example</summary>
+<summary>:eyes: ဥပမာကြည့်ရန်</summary>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&bg_color=00000000)
 
@@ -229,7 +229,7 @@ You can use [GitHub's theme context](https://github.blog/changelog/2021-11-24-sp
 ```
 
 <details>
-<summary>:eyes: Show example</summary>
+<summary>:eyes: ဥပမာကြည့်ရန်</summary>
 
 [![Anurag's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
 [![Anurag's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=default#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
@@ -255,7 +255,7 @@ You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-1
 ```
 
 <details>
-<summary>:eyes: Show example</summary>
+<summary>:eyes: ဥပမာကြည့်ရန်</summary>
 
 <picture>
   <source
@@ -277,16 +277,16 @@ You can customize the appearance of all your cards however you wish with URL par
 
 #### Common Options
 
-*   `title_color` - Card's title color *(hex color)*. Default: `2f80ed`.
-*   `text_color` - Body text color *(hex color)*. Default: `434d58`.
-*   `icon_color` - Icons color if available *(hex color)*. Default: `4c71f2`.
-*   `border_color` - Card's border color *(hex color)*. Default: `e4e2e2` (Does not apply when `hide_border` is enabled).
-*   `bg_color` - Card's background color *(hex color)* **or** a gradient in the form of *angle,start,end*. Default: `fffefe`
-*   `hide_border` - Hides the card's border *(boolean)*. Default: `false`
-*   `theme` - Name of the theme, choose from [all available themes](themes/README.md). Default: `default` theme.
-*   `cache_seconds` - Sets the cache header manually *(min: 21600, max: 86400)*. Default: `21600 seconds (6 hours)`.
-*   `locale` - Sets the language in the card, you can check full list of available locales [here](#available-locales). Default: `en`.
-*   `border_radius` - Corner rounding on the card. Default: `4.5`.
+*   `title_color` - Card ၏ခေါင်းစဥ်အရောင် *(hex color)*. မူလတန်ဖိုး : `2f80ed`.
+*   `text_color` - Body ၏စာသားအရောင် *(hex color)*. မူလတန်ဖိုး : `434d58`.
+*   `icon_color` - Icons ၏အရောင် (ရှိခဲ့လျှင်) *(hex color)*. မူလတန်ဖိုး : `4c71f2`.
+*   `border_color` - Card's border အရောင် *(hex color)*. မူလတန်ဖိုး : `e4e2e2` (Does not apply when `hide_border` is enabled).
+*   `bg_color` - Card ၏နောက်ခံအရောင် *(hex color)* **သို့မဟုတ်** a gradient in the form of *angle,start,end*. မူလတန်ဖိုး : `fffefe`
+*   `hide_border` - Card ၏ border ဖျောက်ထားခြင်း *(boolean)*. မူလတန်ဖိုး : `false`
+*   `theme` - Name of the theme, choose from [all available themes](themes/README.md). မူလတန်ဖိုး : `default` theme.
+*   `cache_seconds` - Sets the cache header manually *(min: 21600, max: 86400)*. မူလတန်ဖိုး : `21600 seconds (6 hours)`.
+*   `locale` - Sets the language in the card, you can check full list of available locales [here](#available-locales). မူလတန်ဖိုး : `en`.
+*   `border_radius` - Corner rounding on the card. မူလတန်ဖိုး : `4.5`.
 
 > [!WARNING]\
 > We use caching to decrease the load on our servers (see <https://github.com/anuraghazra/github-readme-stats/issues/1471#issuecomment-1271551425>). Our cards have a default cache of 6 hours (21600 seconds). Also, note that the cache is clamped to a minimum of 6 hours and a maximum of 24 hours. If you want the data on your statistics card to be updated more often you can [deploy your own instance](#deploy-on-your-own) and set [environment variable](#disable-rate-limit-protections) `CACHE_SECONDS` to a value of your choosing.
@@ -299,52 +299,52 @@ You can provide multiple comma-separated values in the bg\_color option to rende
 
 ##### Available locales
 
-Here is a list of all available locales:
+ဤသည်မှာ ရရှိနိုင်သော ဒေသအားလုံး၏ စာရင်းဖြစ်သည်။
 
 <table>
 <tr><td>
 
 | Code | Locale |
 | --- | --- |
-| `cn` | Chinese |
-| `zh-tw` | Chinese (Taiwan) |
-| `ar` | Arabic |
-| `cs` | Czech |
-| `de` | German |
-| `en` | English |
-| `bn` | Bengali |
-| `es` | Spanish |
-| `fr` | French |
-| `hu` | Hungarian |
+| `cn` | တရုတ် |
+| `zh-tw` | တရုတ် (ထိုင်ဝမ်) |
+| `ar` | အာရပ် |
+| `cs` | ချက် |
+| `de` | ဂျာမန် |
+| `en` | အင်္ဂလိပ် |
+| `bn` | ဘင်္ဂါလီ |
+| `es` | စပိန် |
+| `fr` | ပြင်သစ် |
+| `hu` | ဟန်ဂေရီ |
 
 </td><td>
 
 | Code | Locale |
 | --- | --- |
-| `it` | Italian |
-| `ja` | Japanese |
-| `kr` | Korean |
-| `nl` | Dutch |
-| `pt-pt` | Portuguese (Portugal) |
-| `pt-br` | Portuguese (Brazil) |
-| `np` | Nepali |
-| `el` | Greek |
-| `ru` | Russian |
-| `uk-ua` | Ukrainian |
+| `it` | အီတလီ |
+| `ja` | ဂျပန် |
+| `kr` | ကိုရီးယား |
+| `nl` | ဒတ်ခ်ျ |
+| `pt-pt` | ပေါ်တူဂီ (ပေါ်တူဂီ) |
+| `pt-br` | ပေါ်တူဂီ (ဘရာဇီး) |
+| `np` | နီပေါ |
+| `el` | ဂရိ |
+| `ru` | ရုရှား |
+| `uk-ua` | ယူကရိန်း |
 
 </td><td>
 
 | Code | Locale |
 | --- | --- |
-| `id` | Indonesian |
-| `ml` | Malayalam |
-| `my` | Burmese |
-| `sk` | Slovak |
-| `tr` | Turkish |
-| `pl` | Polish |
-| `uz` | Uzbek |
-| `vi` | Vietnamese |
-| `se` | Swedish |
+| `id` | အင်ဒိုနီးရှား |
+| `ml` | မလေးလမ် |
+| `ငါ့` | ဗမာ |
+| `sk` | လိုဗက် |
+| `tr` | တူရကီ |
+| `pl` | ပိုလန် |
+| `uz` | ဥဇဘက် |
+| `vi`| ဗီယက်နမ် |
+| `se`| ဆွီဒင် |
 
 </td></tr>
 </table>
@@ -353,62 +353,62 @@ If we don't support your language, please consider contributing! You can find mo
 
 #### Stats Card Exclusive Options
 
-*   `hide` - Hides the [specified items](#hiding-individual-stats) from stats *(Comma-separated values)*. Default: `[] (blank array)`.
+*   `hide` - Hides the [specified items](#hiding-individual-stats) from stats *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 *   `hide_title` - *(boolean)*. Default: `false`.
-*   `card_width` - Sets the card's width manually *(number)*. Default: `500px  (approx.)`.
-*   `hide_rank` - *(boolean)* hides the rank and automatically resizes the card width. Default: `false`.
-*   `rank_icon` - Shows alternative rank icon (i.e. `github`, `percentile` or `default`). Default: `default`.
-*   `show_icons` - *(boolean)*. Default: `false`.
-*   `include_all_commits` - Counts total commits instead of just the current year commits *(boolean)*. Default: `false`.
-*   `line_height` - Sets the line height between text *(number)*. Default: `25`.
-*   `exclude_repo` - Excludes stars from specified repositories *(Comma-separated values)*. Default: `[] (blank array)`.
-*   `custom_title` - Sets a custom title for the card. Default:  `<username> GitHub Stats`.
-*   `text_bold` - Uses bold text *(boolean)*. Default: `true`.
-*   `disable_animations` - Disables all animations in the card *(boolean)*. Default: `false`.
+*   `card_width` - Sets the card's width manually *(number)*. မူလတန်ဖိုး : `500px  (approx.)`.
+*   `hide_rank` - *(boolean)* hides the rank and automatically resizes the card width. မူလတန်ဖိုး : `false`.
+*   `rank_icon` - Shows alternative rank icon (i.e. `github`, `percentile` or `default`). မူလတန်ဖိုး : `default`.
+*   `show_icons` - *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `include_all_commits` - Counts total commits instead of just the current year commits *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `line_height` - Sets the line height between text *(number)*. မူလတန်ဖိုး : `25`.
+*   `exclude_repo` - Excludes stars from specified repositories *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
+*   `custom_title` - Sets a custom title for the card. မူလတန်ဖိုး :  `<username> GitHub Stats`.
+*   `text_bold` - Uses bold text *(boolean)*. မူလတန်ဖိုး : `true`.
+*   `disable_animations` - Disables all animations in the card *(boolean)*. မူလတန်ဖိုး : `false`.
 *   `ring_color` - Color of the rank circle *(hex color)*. Defaults to the theme ring color if it exists and otherwise the title color.
-*   `number_format` - Switches between two available formats for displaying the card values `short` (i.e. `6.6k`) and `long` (i.e. `6626`). Default: `short`.
-*   `show` - Shows [additional items](#showing-additional-individual-stats) on stats card (i.e. `reviews`, `discussions_started`, `discussions_answered`, `prs_merged` or `prs_merged_percentage`) *(Comma-separated values)*. Default: `[] (blank array)`.
+*   `number_format` - Switches between two available formats for displaying the card values `short` (i.e. `6.6k`) and `long` (i.e. `6626`). မူလတန်ဖိုး : `short`.
+*   `show` - Shows [additional items](#showing-additional-individual-stats) on stats card (i.e. `reviews`, `discussions_started`, `discussions_answered`, `prs_merged` or `prs_merged_percentage`) *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 
-> [!NOTE]\
+> [!မှတ်ချက်]\
 > When hide\_rank=`true`, the minimum card width is 270 px + the title length and padding.
 
 #### Repo Card Exclusive Options
 
-*   `show_owner` - Shows the repo's owner name *(boolean)*. Default: `false`.
+*   `show_owner` - Shows the repo's owner name *(boolean)*. မူလတန်ဖိုး : `false`.
 
 #### Gist Card Exclusive Options
 
-*   `show_owner` - Shows the gist's owner name *(boolean)*. Default: `false`.
+*   `show_owner` - Shows the gist's owner name *(boolean)*. မူလတန်ဖိုး : `false`.
 
 #### Language Card Exclusive Options
 
-*   `hide` - Hides the languages specified from the card *(Comma-separated values)*. Default: `[] (blank array)`.
-*   `hide_title` - *(boolean)*. Default: `false`.
-*   `layout` - Switches between five available layouts `normal` & `compact` & `donut` & `donut-vertical` & `pie`. Default: `normal`.
-*   `card_width` - Sets the card's width manually *(number)*. Default `300`.
-*   `langs_count` - Shows more languages on the card, between 1-20 *(number)*. Default: `5` for `normal` and `donut`, `6` for other layouts.
-*   `exclude_repo` - Excludes specified repositories *(Comma-separated values)*. Default: `[] (blank array)`.
-*   `custom_title` - Sets a custom title for the card *(string)*. Default `Most Used Languages`.
-*   `disable_animations` - Disables all animations in the card *(boolean)*. Default: `false`.
-*   `hide_progress` - Uses the compact layout option, hides percentages, and removes the bars. Default: `false`.
+*   `hide` - Hides the languages specified from the card *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
+*   `hide_title` - *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `layout` - Switches between five available layouts `normal` & `compact` & `donut` & `donut-vertical` & `pie`. မူလတန်ဖိုး : `normal`.
+*   `card_width` - Sets the card's width manually *(number)*. မူလတန်ဖိုး  `300`.
+*   `langs_count` - Shows more languages on the card, between 1-20 *(number)*. မူလတန်ဖိုး : `5` for `normal` and `donut`, `6` for other layouts.
+*   `exclude_repo` - Excludes specified repositories *(Comma-separated values)*. မူလတန်ဖိုး: `[] (blank array)`.
+*   `custom_title` - Sets a custom title for the card *(string)*. မူလတန်ဖိုး `Most Used Languages`.
+*   `disable_animations` - Disables all animations in the card *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `hide_progress` - Uses the compact layout option, hides percentages, and removes the bars. မူလတန်ဖိုး : `false`.
 *   `size_weight` - Configures language stats algorithm *(number)* (see [Language stats algorithm](#Language-stats-algorithm)), defaults to 1.
 *   `count_weight` - Configures language stats algorithm *(number)* (see [Language stats algorithm](#Language-stats-algorithm)), defaults to 0.
 
-> [!WARNING]\
+> [!သတိပြုရန်]\
 > Language names should be URI-escaped, as specified in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
 > (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use
 > [urlencoder.org](https://www.urlencoder.org/) to help you do this automatically.
 
 #### WakaTime Card Exclusive Options
 
-*   `hide` - Hides the languages specified from the card *(Comma-separated values)*. Default: `[] (blank array)`.
+*   `hide` - Hides the languages specified from the card *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 *   `hide_title` - *(boolean)*. Default `false`.
-*   `line_height` - Sets the line height between text *(number)*. Default `25`.
-*   `hide_progress` - Hides the progress bar and percentage *(boolean)*. Default `false`.
-*   `custom_title` - Sets a custom title for the card *(string)*. Default `WakaTime Stats`.
-*   `layout` - Switches between two available layouts `default` & `compact`.  Default `default`.
+*   `line_height` - Sets the line height between text *(number)*. မူလတန်ဖိုး `25`.
+*   `hide_progress` - Hides the progress bar and percentage *(boolean)*. မူလတန်ဖိုး `false`.
+*   `custom_title` - Sets a custom title for the card *(string)*. မူလတန်ဖိုး `WakaTime Stats`.
+*   `layout` - Switches between two available layouts `default` & `compact`.  မူလတန်ဖိုး `default`.
 *   `langs_count` - Limits the number of languages on the card, defaults to all reported languages *(number)*.
-*   `api_domain` - Sets a custom API domain for the card, e.g. to use services like [Hakatime](https://github.com/mujx/hakatime) or [Wakapi](https://github.com/muety/wakapi) *(string)*. Default `Waka API`.
+*   `api_domain` - Sets a custom API domain for the card, e.g. to use services like [Hakatime](https://github.com/mujx/hakatime) or [Wakapi](https://github.com/muety/wakapi) *(string)*. မူလတန်ဖိုး `Waka API`.
 
 ***
 
@@ -418,7 +418,7 @@ GitHub extra pins allow you to pin more than 6 repositories in your profile usin
 
 Yay! You are no longer limited to 6 pinned repositories.
 
-### Usage
+### အသုံးပြုနည်း
 
 Copy-paste this code into your readme and change the links.
 
@@ -440,7 +440,7 @@ Use [show\_owner](#repo-card-exclusive-options) query option to include the repo
 
 GitHub gist pins allow you to pin gists in your GitHub profile using a GitHub readme profile.
 
-### Usage
+### အသုံးပြုနည်း
 
 Copy-paste this code into your readme and change the links.
 
@@ -462,19 +462,19 @@ Use [show\_owner](#gist-card-exclusive-options) query option to include the gist
 
 The top languages card shows a GitHub user's most frequently used languages.
 
-> [!WARNING]\
+> [!သတိပြုရန်]\
 > By default, the language card shows language results only from public repositories. To include languages used in private repositories, you should [deploy your own instance](#deploy-on-your-own) using your own GitHub API token.
 
-> [!NOTE]\
+> [!မှတ်ချက်]\
 > Top Languages does not indicate the user's skill level or anything like that; it's a GitHub metric to determine which languages have the most code on GitHub. It is a new feature of github-readme-stats.
 
-> [!WARNING]\
+> [!သတိပြုရန်]\
 > This card shows languages usage only inside your own non-forked repositories, not depending from who is the author of the commits. It does not include your contributions into another users/organizations repositories. Currently there are no way to get this data from GitHub API. If you want this behavior to be improved you can support [this feature request](https://github.com/orgs/community/discussions/18230) created by [@rickstaa](https://github.com/rickstaa) inside GitHub Community.
 
-> [!WARNING]\
+> [!သတိပြုရန်]\
 > Currently this card shows data only about first 100 repositories. This is because GitHub API limitations which cause downtimes of public instance (see [#1471](https://github.com/anuraghazra/github-readme-stats/issues/1471)). In future this behavior will be improved by releasing GitHub action or providing environment variable for user's own instances.
 
-### Usage
+### အသုံးပြုနည်း
 
 Copy-paste this code into your readme and change the links.
 
@@ -592,7 +592,7 @@ You can use the `&hide_progress=true` option to hide the percentages and the pro
 
 # WakaTime Stats Card
 
-> [!WARNING]\
+> [!သတိပြုရန်]\
 > Please be aware that we currently only show data from WakaTime profiles that are public. You therefore have to make sure that **BOTH** `Display code time publicly` and `Display languages, editors, os, categories publicly` are enabled.
 
 Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
@@ -738,10 +738,10 @@ By default, GitHub does not lay out the cards side by side. To do that, you can 
 
 Since the GitHub API only allows 5k requests per hour, my `https://github-readme-stats.vercel.app/api` could possibly hit the rate limiter. If you host it on your own Vercel server, then you do not have to worry about anything. Click on the deploy button to get started!
 
-> [!NOTE]\
+> [!မှတ်ချက်]\
 > Since [#58](https://github.com/anuraghazra/github-readme-stats/pull/58), we should be able to handle more than 5k requests and have fewer issues with downtime :grin:.
 
-> [!NOTE]\
+> [!မှတ်ချက်]\
 > If you are on the [Pro (i.e. paid)](https://vercel.com/pricing) Vercel plan, the [maxDuration](https://vercel.com/docs/concepts/projects/project-configuration#value-definition) value found in the [vercel.json](https://github.com/anuraghazra/github-readme-stats/blob/master/vercel.json) can be increased when your Vercel instance frequently times out during the card request. You are advised to keep this value lower than `30` seconds to prevent high memory usage.
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/anuraghazra/github-readme-stats)
@@ -770,7 +770,7 @@ Since the GitHub API only allows 5k requests per hour, my `https://github-readme
 
 ## On other platforms
 
-> [!WARNING]\
+> [!သတိပြုရန်]\
 > This way of using GRS is not officially supported and was added to cater to some particular use cases where Vercel could not be used (e.g. [#2341](https://github.com/anuraghazra/github-readme-stats/discussions/2341)). The support for this method, therefore, is limited.
 
 <details>
@@ -800,9 +800,9 @@ See [the Vercel documentation](https://vercel.com/docs/concepts/projects/environ
 
 # :sparkling\_heart: ပရောဂျက်အား ကူညီထောက်ပံ့ခြင်း
 
-ဤအရာကို ကျွန်တော်အကုန်နီးပါး open-source ဖြစ်အောင်လုပ်ခဲ့ပြီး ဤပရောဂျက်နဲ့ပက်သက်ပြီးအကူအညီလိုသူများကိုလည်း ကြိုစားပြီးစာပြန်ပေးပါတယ်။ ဤအရာကသိတဲ့အတိုင်း အချိန်တော့ယူရပါတယ်။ သင်ဒီ service ကိုအခမဲ့အသုံးပြုနိုင်ပါတယ်။
+ဤအရာကို ကျွန်တော်အကုန်နီးပါး open-source ဖြစ်အောင်လုပ်ခဲ့ပြီး ဤပရောဂျက်နဲ့ပက်သက်ပြီးအကူအညီလိုသူများကိုလည်း ကြိုစားပြီး စာပြန်ပေးပါတယ်။ ဤအရာကသိတဲ့အတိုင်း အချိန်တော့ယူရပါတယ်။ သင်ဒီ service ကိုအခမဲ့အသုံးပြုနိုင်ပါတယ်။
 
-သို့သော်လည်း သင်သည် ဤပရောဂျက်အား ကြိုက်နှစ်သက်၍ဖြစ်စေ ကျွန်ပ်တို့အား ဤလိုအရာများထပ်ပြီးပြုလုပ်ဖို့ အားပေးချင်၍ဖြစ်စေ ပြုလုပ်ပေးနိုင်သည့်နည်းလမ်းအနည်းငယ်ရှိပါသည် -
+သို့သော်လည်း သင်သည် ဤပရောဂျက်အား ကြိုက်နှစ်သက်၍ဖြစ်စေ ကျွန်ပ်တို့အား ဤလိုအရာများထပ်ပြီးပြုလုပ်ဖို့ အားပေးချင်၍ဖြစ်စေ ပြုလုပ်ပေးနိုင်သည့်နည်းလမ်း အနည်းငယ်ရှိပါသည် -
 
 *   github-readme-stats ကိုသင့် readme မှာအသုံးပြပါက လင့်ပြန်ညွန်းပေးပြီး credit ပေးပြီးကူညီနိုင်ပါတယ် :D
 *   ပရောဂျက်အား star နှင့် ရှယ်ပေးပြီး ကူညီနိုင်ပါတယ် :rocket:

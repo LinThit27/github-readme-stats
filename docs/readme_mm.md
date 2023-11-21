@@ -207,7 +207,7 @@ Transparent background အတွက် `transparent` theme ကိုလည်း
 
 ##### Add transparent alpha channel to a themes bg\_color
 
-You can use the `bg_color` parameter to make any of [the available themes](themes/README.md) transparent. This is done by setting the `bg_color` to a color with a transparent alpha channel (ဥပမာ - `bg_color=00000000`):
+`bg_color` parameter ကိုအသုံးပြုပြီး [available themes](themes/README.md) ထဲမှကြိုက်နှစ်သက်ရာကို transparent ဖြစ်အောင်လုပ်နိုင်ပါသည်။ `bg_color` ကို ransparent alpha channel မှအရောင်တစ်ခုအဖြစ် သတ်မှတ်ခြင်းဖြင့် လုပ်ဆောင်နိုင်သည်။(ဥပမာ - `bg_color=00000000`):
 
 ```md
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&bg_color=00000000)
@@ -222,7 +222,7 @@ You can use the `bg_color` parameter to make any of [the available themes](theme
 
 ##### Use GitHub's theme context tag
 
-You can use [GitHub's theme context](https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/) tags to switch the theme based on the user GitHub theme automatically. This is done by appending `#gh-dark-mode-only` or `#gh-light-mode-only` to the end of an image URL. This tag will define whether the image specified in the markdown is only shown to viewers using a light or a dark GitHub theme:
+[GitHub's theme context](https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/) tags ကိုအသုံးပြုပြီး အသုံးပြုသူ ရဲ့ GitHub theme  အပေါ်မူတည်၍ auto ပြောင်းအောင်လုပ်နိုင်ပါသည်။ Image URL ရဲ့အနောက်တွင် `#gh-dark-mode-only` သို့မဟုတ် `#gh-light-mode-only` ကိုထပ်ထည့်ခြင်းဖြင့် အသုံးပြုနိုင်ပါသည်။ ဤ tag သည် markdown တွင်ဖော်ပြထားသောပုံအား light သို့မဟုတ် dark GitHub theme အသုံးပြု၍ ကြည့်ရှုသူများကိုသာ ပြသခြင်းရှိမရှိ သတ်မှတ်ပေးပါမည်။
 
 ```md
 [![Anurag's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
@@ -239,7 +239,7 @@ You can use [GitHub's theme context](https://github.blog/changelog/2021-11-24-sp
 
 ##### Use GitHub's new media feature
 
-You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-19-specify-theme-context-for-images-in-markdown-beta/) in HTML to specify whether to display images for light or dark themes. This is done using the HTML `<picture>` element in combination with the `prefers-color-scheme` media feature.
+[GitHub's new media feature](https://github.blog/changelog/2022-05-19-specify-theme-context-for-images-in-markdown-beta/) ကို HTML ထဲတွင်အသုံးပြပြီး ပုံများကို light mode သို့မဟုတ် dark mode အပေါ်တွင်ပြသင့်မပြသင့် လုပ်ဆောင်နိုင်ပါသည်။ ၎င်းကို HTML ရဲ့ `<picture>` element နှင့်အတူ `prefers-color-scheme` media feature တို့နဲ့ပေါင်းစပ်ပြီးလုပ်ဆောင်ထားတာဖြစ်ပါတယ်။
 
 ```html
 <picture>
@@ -290,7 +290,7 @@ You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-1
 *   `border_radius` - Card Coner ဝိုင်းခြင်း . မူလတန်ဖိုး : `4.5`.
 
 > [!WARNING]\
-> server load နည်းစေရန်အတွက် caching ကိုအသုံးပြုထားပါသည်။(<https://github.com/anuraghazra/github-readme-stats/issues/1471#issuecomment-1271551425>) ကိုကြည့်ပါ။Card မှာ default cache အနေဖြင့် ၆နာရီ (၂၁၆၀၀ စက္ကန့် ) ရှိပါသည်။ Also, note that the cache is clamped to a minimum of 6 hours and a maximum of 24 hours. If you want the data on your statistics card to be updated more often you can [deploy your own instance](#deploy-on-your-own) and set [environment variable](#disable-rate-limit-protections) `CACHE_SECONDS` to a value of your choosing.
+> server load နည်းစေရန်အတွက် caching ကိုအသုံးပြုထားပါသည်။(<https://github.com/anuraghazra/github-readme-stats/issues/1471#issuecomment-1271551425>) ကိုကြည့်ပါ။Card မှာ default cache အနေဖြင့် ၆နာရီ (၂၁၆၀၀ စက္ကန့် ) ရှိပါသည်။ ထို့အပြင် cache ကို အနည်းဆုံး 6 နာရီနှင့် အများဆုံး 24 နာရီအထိ ထားရှိကြောင်း သတိပြုပါ။ သင့် statistics card ထဲမှ data များကိုပို၍ update ဖြစ်ချင်လျင် သင့်ကိုယ်ပိုင် instance တစ်ခုကို  [deploy](#deploy-on-your-own) ခြင်းနှင့် [environment variable](#disable-rate-limit-protections) `CACHE_SECONDS` ကို သင်ရွေးချယ်ထားသည့်တန်းဖိုးဖြင့် သတ်မှတ်ပါ။
 
 ##### Gradient in bg\_color
 
@@ -360,13 +360,13 @@ You can provide multiple comma-separated values in the bg\_color option to rende
 *   `hide_rank` - *(boolean)* အဆင့်ကို ပယ်ထားပြီး Card အကျယ်ကို auto ပြန်ချိန်ခြင်း . မူလတန်ဖိုး : `false`.
 *   `rank_icon` - အခြားအဆင့် Icon ကိုပြခြင်း  (ဥပမာ - `github`, `percentile` or `default`). မူလတန်ဖိုး : `default`.
 *   `show_icons` - *(boolean)*Icon ပြခြင်း . မူလတန်ဖိုး : `false`.
-*   `include_all_commits` - Counts total commits instead of just the current year commits *(boolean)*. မူလတန်ဖိုး : `false`.
-*   `line_height` - Sets the line height between text *(number)*. မူလတန်ဖိုး : `25`.
-*   `exclude_repo` - Excludes stars from specified repositories *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
-*   `custom_title` - Sets a custom title for the card. မူလတန်ဖိုး :  `<username> GitHub Stats`.
-*   `text_bold` - Uses bold text *(boolean)*. မူလတန်ဖိုး : `true`.
-*   `disable_animations` - Disables all animations in the card *(boolean)*. မူလတန်ဖိုး : `false`.
-*   `ring_color` - Color of the rank circle *(hex color)*. Defaults to the theme ring color if it exists and otherwise the title color.
+*   `include_all_commits` - commit အားလုံးကိုရေတွက်ခြင်း (တစ်နှစ်စာသာမဟုတ်ပဲ) *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `line_height` - စာသားများကြား၌ line height သတ်မှတ်ပေးခြင်း *(number)*. မူလတန်ဖိုး : `25`.
+*   `exclude_repo` - Specified repositories များမှ များကိုဖယ်ရှားခြင်း *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
+*   `custom_title` - Card အတွက် စိတ်ကြိုက်ခေါင်းစဉ်တစ်ခု သတ်မှတ်ခြင်း . မူလတန်ဖိုး :  `<username> GitHub Stats`.
+*   `text_bold` - Bold စာသားအသုံးပြုခြင်း *(boolean)*. မူလတန်ဖိုး : `true`.
+*   `disable_animations` - Card အတွင်းရှိ animations အားလုံးကိုဖယ်ရှားခြင်း *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `ring_color` - Rank circle ၏အရောင် *(hex color)*. Defaults to the theme ring color if it exists and otherwise the title color.
 *   `number_format` - Switches between two available formats for displaying the card values `short` (i.e. `6.6k`) and `long` (i.e. `6626`). မူလတန်ဖိုး : `short`.
 *   `show` - Shows [additional items](#showing-additional-individual-stats) on stats card (i.e. `reviews`, `discussions_started`, `discussions_answered`, `prs_merged` or `prs_merged_percentage`) *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 

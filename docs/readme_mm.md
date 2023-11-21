@@ -192,7 +192,7 @@ Since GitHub will re-upload the cards and serve them from their [CDN](https://do
 
 ##### Use the transparent theme
 
-We have included a `transparent` theme that has a transparent background. This theme is optimized to look good on GitHub's dark and light default themes.အသုံးပြုရန် `&theme=transparent` parameter ကိုထည့်ပေး၍အသုံးပြုနိုင်ပါသည်။ 
+Transparent background အတွက် `transparent` theme ကိုလည်းထည့်သွင်းပေးထားပါသည်။ဤ theme  ကို GitHub's dark and light default themes နှစ်ခုလုံးအတွက်အဆင်ပြေအောင် ဆောင်ရွက်ပေးထားပါသည်။အသုံးပြုရန် `&theme=transparent` parameter ကိုထည့်ပေး၍အသုံးပြုနိုင်ပါသည်။ 
 
 ```md
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=transparent)
@@ -350,16 +350,16 @@ You can provide multiple comma-separated values in the bg\_color option to rende
 </td></tr>
 </table>
 
-If we don't support your language, please consider contributing! You can find more information about how to do it in our [contributing guidelines](CONTRIBUTING.md#translations-contribution).
+အထက်ပါဇယားတွင် သင့် ဘာသာစကားမပါဝင်ပါက contribute လုပ်ခြင်းဖြင့် ပါဝင်နိုင်ပါသည်။ အကြောင်းအရာအသေးစိတ်ကို [contributing guidelines](CONTRIBUTING.md#translations-contribution) တွင်ဝင်ရောက်လေ့လာနိုင်ပါသည်။
 
 #### Stats Card Exclusive Options
 
 *   `hide` - Hides the [specified items](#hiding-individual-stats) from stats *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 *   `hide_title` - *(boolean)*. Default: `false`.
-*   `card_width` - Sets the card's width manually *(number)*. မူလတန်ဖိုး : `500px  (approx.)`.
-*   `hide_rank` - *(boolean)* hides the rank and automatically resizes the card width. မူလတန်ဖိုး : `false`.
-*   `rank_icon` - Shows alternative rank icon (i.e. `github`, `percentile` or `default`). မူလတန်ဖိုး : `default`.
-*   `show_icons` - *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `card_width` - Card အကျယ်ကို manually ပြုလုပ်ခြင်း . မူလတန်ဖိုး : `500px  (approx.)`.
+*   `hide_rank` - *(boolean)* အဆင့်ကို ပယ်ထားပြီး Card အကျယ်ကို auto ပြန်ချိန်ခြင်း . မူလတန်ဖိုး : `false`.
+*   `rank_icon` - အခြားအဆင့် Icon ကိုပြခြင်း  (ဥပမာ - `github`, `percentile` or `default`). မူလတန်ဖိုး : `default`.
+*   `show_icons` - *(boolean)*Icon ပြခြင်း . မူလတန်ဖိုး : `false`.
 *   `include_all_commits` - Counts total commits instead of just the current year commits *(boolean)*. မူလတန်ဖိုး : `false`.
 *   `line_height` - Sets the line height between text *(number)*. မူလတန်ဖိုး : `25`.
 *   `exclude_repo` - Excludes stars from specified repositories *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.

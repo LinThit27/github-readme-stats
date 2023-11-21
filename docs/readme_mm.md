@@ -122,7 +122,7 @@
 
 # GitHub Stats Card
 
-ဤစာကို သင့်ရဲ့ markdown ထဲ ကောပီ paste လိုက်ယုံပါပဲ။ လွယ်ပါတယ်!
+ဤစာကို သင့်ရဲ့ markdown ထဲ copy paste လိုက်ယုံပါပဲ။ လွယ်ပါတယ်!
 
 `?username=` နေရာမှာ သင့် github username ကိုထည့်ပါ။
 
@@ -131,10 +131,10 @@
 ```
 
 > [!သတိပြုရန်]\
-> By default, the stats card only shows statistics like stars, commits and pull requests from public repositories. To show private statistics on the stats card, you should [deploy your own instance](#deploy-on-your-own) using your own GitHub API token.
+> မူလအတိုင်းဆိုလျင် stats card သည် အချက်အလက်များကို  public repositories များမှာသာယူ၍ပြသသည်။အကယ်၍ private အချက်အလက်များကို stats cardများပေါ်တွင်ပြချင်လျင် သင့်ရဲ့ကိုယ်ပိုင် GitHub API token သုံးပြီး [deploy](#deploy-on-your-own) သင့်ပါသည်။
 
 > [!NOTE]\
-> Available ranks are S (top 1%), A+ (12.5%), A (25%), A- (37.5%), B+ (50%), B (62.5%), B- (75%), C+ (87.5%) and C (everyone). This ranking scheme is based on the [Japanese academic grading](https://wikipedia.org/wiki/Academic_grading_in_Japan) system. The global percentile is calculated as a weighted sum of percentiles for each statistic (number of commits, pull requests, reviews, issues, stars and followers), based on the cumulative distribution function of the [exponential](https://wikipedia.org/wiki/exponential_distribution) and the [log-normal](https://wikipedia.org/wiki/Log-normal_distribution) distributions. The implementation can be investigated at [src/calculateRank.js](https://github.com/anuraghazra/github-readme-stats/blob/master/src/calculateRank.js). The circle around the rank shows 100 minus the global percentile.
+> ရှိတဲ့အဆင့်တွေကတော့ S (top 1%), A+ (12.5%), A (25%), A- (37.5%), B+ (50%), B (62.5%), B- (75%), C+ (87.5%) & C (လူတိုင်း) တို့ဖြစ်ပါတယ်။ ဒီအဆင့်သတ်မှတ်ချက်ကတော့ [Japanese academic grading](https://wikipedia.org/wiki/Academic_grading_in_Japan) system အပေါ်အခြေခံထားတာပဲဖြစ်ပါတယ်။  The global percentile is calculated as a weighted sum of percentiles for each statistic (number of commits, pull requests, reviews, issues, stars and followers), based on the cumulative distribution function of the [exponential](https://wikipedia.org/wiki/exponential_distribution) and the [log-normal](https://wikipedia.org/wiki/Log-normal_distribution) distributions.တွက်ချက်မှုများကို [src/calculateRank.js](https://github.com/anuraghazra/github-readme-stats/blob/master/src/calculateRank.js) တွင်ကြည့်ရှုနိုင်ပါသည်။  The circle around the rank shows 100 minus the global percentile.
 
 ### Hiding individual stats
 
@@ -176,11 +176,12 @@ Icon များကိုပြသရန် query params `&show=` ကိုထ�
 
 #### ပါဝင်သော အပြင်အဆင်များ
 
-GitHub Readme Stats သည် built-in အပြင်အဆင်များစွာပါရှိသည်။ (ဥပမာ - `dark`, `radical`, `merko`, `gruvbox`, `tokyonight`, `onedark`, `cobalt`, `synthwave`, `highcontrast`, `dracula`).
+GitHub Readme Stats သည် built-in အပြင်အဆင်များစွာပါရှိပါသည်။ (ဥပမာ - `dark`, `radical`, `merko`, `gruvbox`, `tokyonight`, `onedark`, `cobalt`, `synthwave`, `highcontrast`, `dracula`).
 
 <img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stats Themes" width="600px"/>
 
-You can look at a preview for [all available themes](themes/README.md) or checkout the [theme config file](themes/index.js). Please note that we paused addition of new themes to decrease maintenance efforts, all pull requests related to new themes will be closed.
+အပြင်အဆင်များရဲ့ preview ကို [all available themes](themes/README.md) သို့မဟုတ်  [theme config file](themes/index.js) တွင်ဝင်ကြည့်နိုင်ပါသည်။
+**[သတိပြုရန်!]** ပြုပြင်ထိန်းသိမ်းအားထုတ်မှုများကို လျှော့ချရန် အပြင်အဆင်အသစ်များ ထပ်ထည့်ခြင်းကို ခေတ္တရပ်ထားပါသည်။ အပြင်အဆင်အသစ်များနှင့် သက်ဆိုင်သည့် pull request များအားလုံးကို ပိတ်ပါမည်။
 
 #### Responsive Card Theme
 
@@ -191,7 +192,7 @@ Since GitHub will re-upload the cards and serve them from their [CDN](https://do
 
 ##### Use the transparent theme
 
-We have included a `transparent` theme that has a transparent background. This theme is optimized to look good on GitHub's dark and light default themes. You can enable this theme using the `&theme=transparent` parameter like so:
+We have included a `transparent` theme that has a transparent background. This theme is optimized to look good on GitHub's dark and light default themes.အသုံးပြုရန် `&theme=transparent` parameter ကိုထည့်ပေး၍အသုံးပြုနိုင်ပါသည်။ 
 
 ```md
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=transparent)
@@ -206,7 +207,7 @@ We have included a `transparent` theme that has a transparent background. This t
 
 ##### Add transparent alpha channel to a themes bg\_color
 
-You can use the `bg_color` parameter to make any of [the available themes](themes/README.md) transparent. This is done by setting the `bg_color` to a color with a transparent alpha channel (i.e. `bg_color=00000000`):
+You can use the `bg_color` parameter to make any of [the available themes](themes/README.md) transparent. This is done by setting the `bg_color` to a color with a transparent alpha channel (ဥပမာ - `bg_color=00000000`):
 
 ```md
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&bg_color=00000000)
@@ -273,7 +274,7 @@ You can use [GitHub's new media feature](https://github.blog/changelog/2022-05-1
 
 ### Customization
 
-You can customize the appearance of all your cards however you wish with URL parameters.
+သင့် Card များရဲ့ ပုံပန်းအသွင်အပြင်များကို  URL parameter များဖြင့် စိတ်ကြိုက်ပြင်ဆင်နိုင်ပါသည်။  
 
 #### Common Options
 

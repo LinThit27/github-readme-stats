@@ -113,7 +113,7 @@
 # Important Notices <!-- omit in toc -->
 
 > [!IMPORTANT]\
-> GitHub API သည် အသုံးပြုသူအကောင့်တစ်ခုလျှင် [တစ်နာရီလျှင် တောင်းဆိုမှု 5k] ကိုသာ ခွင့်ပြုထားသောကြောင့်၊ `https://github-readme-stats.vercel.app/api` တွင် လက်ခံထားသော အများသူငှာ Vercel instance သည် နှုန်းကန့်သတ်ချက်ကို ထိသွားစေနိုင်သည် (#1471 ကိုကြည့်ပါ)။  phttps://github.com/anuraghazra/github-readme-stats/issues/1471)). ဤအရာမဖြစ်ပွားစေရန်အတွက် ကျွန်ုပ်တို့သည် caching ကိုအသုံးပြုသည် (https://github.com/anuraghazra/github-readme-stats#common-options ကိုကြည့်ပါ)။ ဤကန့်သက်ချက်များကို ကိုယ်ပိုင် [Vercel Instance](#disable-rate-limit-protections) တွင် Deploy ခြင်းဖြင့် ပိတ်နိုင်ပါသည်။
+> GitHub API သည် အသုံးပြုသူအကောင့်တစ်ခုလျှင် [တစ်နာရီလျှင် တောင်းဆိုမှု 5k] ကိုသာ ခွင့်ပြုထားသောကြောင့်၊ `https://github-readme-stats.vercel.app/api` တွင် လက်ခံထားသော အများသူငှာ Vercel instance သည် နှုန်းကန့်သတ်ချက်ကို ထိသွားစေနိုင်သည် [#1471](https://github.com/anuraghazra/github-readme-stats/issues/1471) ကိုကြည့်ပါ။ . ဤအရာမဖြစ်ပွားစေရန်အတွက် ကျွန်ုပ်တို့သည် caching ကိုအသုံးပြုသည် (https://github.com/anuraghazra/github-readme-stats#common-options ကိုကြည့်ပါ)။ ဤကန့်သက်ချက်များကို ကိုယ်ပိုင် [Vercel Instance](#disable-rate-limit-protections) တွင် Deploy ခြင်းဖြင့် ပိတ်နိုင်ပါသည်။
 
 <img alt="Uptime Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub-readme-stats-git-monitoring-github-readme-stats-team.vercel.app%2Fapi%2Fstatus%2Fup%3Ftype%3Dshields">
 
@@ -148,7 +148,7 @@ query parameter `&hide=` ကိုထည့်ပေးပြီး comma ဖြ
 
 ### Showing additional individual stats
 
-You can pass a query parameter `&show=` to show any specific additional stats with comma-separated values.
+query parameter `&show=` ကိုထည့်ပေးပြီး comma ဖြင့် hide ချင်သောတန်ဖိုးအားထည့်ပေးနိုင်ပါသည်။
 
 > ရွေးချယ်မှုမျာ: `&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage`
 
@@ -158,7 +158,7 @@ You can pass a query parameter `&show=` to show any specific additional stats wi
 
 ### Icons များကိုပြသခြင်း
 
-To enable icons, you can pass `&show_icons=true` in the query param, like so:
+Icon များကိုပြသရန် query params `&show=` ကိုထည့်​ပေး၍ ပြသနိုင်ပါသည်။
 
 ```md
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
@@ -166,9 +166,9 @@ To enable icons, you can pass `&show_icons=true` in the query param, like so:
 
 ### အပြင်အဆင်များ
 
-With inbuilt themes, you can customize the look of the card without doing any [manual customization](#customization).
+မူလပါပြီးသား အပြင်အဆင်များကြောင့် သင့်ရဲ့ Card ကို ကိုယ်တိုင် [manual customize](#customization) လုပ်စရာမလိုပဲ အလှဆင်နိုင်ပါတယ်။
 
-Use `&theme=THEME_NAME` parameter like so :
+`&theme=THEME_NAME` parameter ကိုအောက်ပါအတိုင်းအသုံးပြုပါ။
 
 ```md
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
@@ -176,7 +176,7 @@ Use `&theme=THEME_NAME` parameter like so :
 
 #### ပါဝင်သော အပြင်အဆင်များ
 
-GitHub Readme Stats comes with several built-in themes (e.g. `dark`, `radical`, `merko`, `gruvbox`, `tokyonight`, `onedark`, `cobalt`, `synthwave`, `highcontrast`, `dracula`).
+GitHub Readme Stats သည် built-in အပြင်အဆင်များစွာပါရှိသည်။ (ဥပမာ - `dark`, `radical`, `merko`, `gruvbox`, `tokyonight`, `onedark`, `cobalt`, `synthwave`, `highcontrast`, `dracula`).
 
 <img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stats Themes" width="600px"/>
 
@@ -283,13 +283,13 @@ You can customize the appearance of all your cards however you wish with URL par
 *   `border_color` - Card's border အရောင် *(hex color)*. မူလတန်ဖိုး : `e4e2e2` (Does not apply when `hide_border` is enabled).
 *   `bg_color` - Card ၏နောက်ခံအရောင် *(hex color)* **သို့မဟုတ်** a gradient in the form of *angle,start,end*. မူလတန်ဖိုး : `fffefe`
 *   `hide_border` - Card ၏ border ဖျောက်ထားခြင်း *(boolean)*. မူလတန်ဖိုး : `false`
-*   `theme` - Name of the theme, choose from [all available themes](themes/README.md). မူလတန်ဖိုး : `default` theme.
+*   `theme` - theme နာမည်, [all available themes](themes/README.md) မှရွေးပါ။ မူလတန်ဖိုး : `default` theme.
 *   `cache_seconds` - Sets the cache header manually *(min: 21600, max: 86400)*. မူလတန်ဖိုး : `21600 seconds (6 hours)`.
 *   `locale` - Sets the language in the card, you can check full list of available locales [here](#available-locales). မူလတန်ဖိုး : `en`.
-*   `border_radius` - Corner rounding on the card. မူလတန်ဖိုး : `4.5`.
+*   `border_radius` - Card Coner ဝိုင်းခြင်း . မူလတန်ဖိုး : `4.5`.
 
 > [!WARNING]\
-> We use caching to decrease the load on our servers (see <https://github.com/anuraghazra/github-readme-stats/issues/1471#issuecomment-1271551425>). Our cards have a default cache of 6 hours (21600 seconds). Also, note that the cache is clamped to a minimum of 6 hours and a maximum of 24 hours. If you want the data on your statistics card to be updated more often you can [deploy your own instance](#deploy-on-your-own) and set [environment variable](#disable-rate-limit-protections) `CACHE_SECONDS` to a value of your choosing.
+> server load နည်းစေရန်အတွက် caching ကိုအသုံးပြုထားပါသည်။(<https://github.com/anuraghazra/github-readme-stats/issues/1471#issuecomment-1271551425>) ကိုကြည့်ပါ။Card မှာ default cache အနေဖြင့် ၆နာရီ (၂၁၆၀၀ စက္ကန့် ) ရှိပါသည်။ Also, note that the cache is clamped to a minimum of 6 hours and a maximum of 24 hours. If you want the data on your statistics card to be updated more often you can [deploy your own instance](#deploy-on-your-own) and set [environment variable](#disable-rate-limit-protections) `CACHE_SECONDS` to a value of your choosing.
 
 ##### Gradient in bg\_color
 
@@ -338,7 +338,7 @@ You can provide multiple comma-separated values in the bg\_color option to rende
 | --- | --- |
 | `id` | အင်ဒိုနီးရှား |
 | `ml` | မလေးလမ် |
-| `ငါ့` | ဗမာ |
+| `my` | မြန်မာ |
 | `sk` | လိုဗက် |
 | `tr` | တူရကီ |
 | `pl` | ပိုလန် |
@@ -372,7 +372,7 @@ If we don't support your language, please consider contributing! You can find mo
 > [!မှတ်ချက်]\
 > When hide\_rank=`true`, the minimum card width is 270 px + the title length and padding.
 
-#### Repo Card Exclusive Options
+#### Repo Card သီးသန့်ရွေးချယ်မှုများ
 
 *   `show_owner` - Shows the repo's owner name *(boolean)*. မူလတန်ဖိုး : `false`.
 
@@ -380,7 +380,7 @@ If we don't support your language, please consider contributing! You can find mo
 
 *   `show_owner` - Shows the gist's owner name *(boolean)*. မူလတန်ဖိုး : `false`.
 
-#### Language Card Exclusive Options
+#### Language Card သီးသန့်ရွေးချယ်မှုများ
 
 *   `hide` - Hides the languages specified from the card *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 *   `hide_title` - *(boolean)*. မူလတန်ဖိုး : `false`.
@@ -396,10 +396,10 @@ If we don't support your language, please consider contributing! You can find mo
 
 > [!သတိပြုရန်]\
 > Language names should be URI-escaped, as specified in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
-> (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use
+> (ဥပမာ - `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use
 > [urlencoder.org](https://www.urlencoder.org/) to help you do this automatically.
 
-#### WakaTime Card Exclusive Options
+#### WakaTime Card သီးသန့်ရွေးချယ်မှုများ
 
 *   `hide` - Hides the languages specified from the card *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 *   `hide_title` - *(boolean)*. Default `false`.
@@ -458,9 +458,9 @@ Use [show\_owner](#gist-card-exclusive-options) query option to include the gist
 
 ![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d\&show_owner=true)
 
-# Top Languages Card
-
-The top languages card shows a GitHub user's most frequently used languages.
+# အသုံးအများဆုံး Languages Card
+ ပြပေးသည်။
+အသုံးအများဆုံး languages card သည် GitHub user တစ်ယောက်၏ အသုံးအများဆုံး programming language များကိုပြပေးသည်။.
 
 > [!သတိပြုရန်]\
 > By default, the language card shows language results only from public repositories. To include languages used in private repositories, you should [deploy your own instance](#deploy-on-your-own) using your own GitHub API token.

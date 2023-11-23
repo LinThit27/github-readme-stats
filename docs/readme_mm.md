@@ -188,7 +188,8 @@ GitHub Readme Stats သည် built-in အပြင်အဆင်များ�
 [![Anurag's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#responsive-card-theme#gh-dark-mode-only)
 [![Anurag's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=default#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#responsive-card-theme#gh-light-mode-only)
 
-Since GitHub will re-upload the cards and serve them from their [CDN](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls), we can not infer the browser/GitHub theme on the server side. There are, however, four methods you can use to create dynamics themes on the client side.
+GitHub သည် card များကို re-upload ပြီး၎င်းတို့၏ [CDN](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls) မှတစ်ဆင့်ပြပေးမှာဖြစ်သောကြောင့်  server side
+မှတစ်ဆင့်  browser/GitHub theme ကို ပြုပြင်၍မရပါ။ သို့သော်လည်း client side မှတစ်ဆင့် dynamics themes ရရှိစေရန် နည်းလမ်း ၄ ခုရှိပါသည်။
 
 ##### Use the transparent theme
 
@@ -285,8 +286,8 @@ Transparent background အတွက် `transparent` theme ကိုလည်း
 *   `bg_color` - Card ၏နောက်ခံအရောင် *(hex color)* **သို့မဟုတ်** a gradient in the form of *angle,start,end*. မူလတန်ဖိုး : `fffefe`
 *   `hide_border` - Card ၏ border ဖျောက်ထားခြင်း *(boolean)*. မူလတန်ဖိုး : `false`
 *   `theme` - theme နာမည်, [all available themes](themes/README.md) မှရွေးပါ။ မူလတန်ဖိုး : `default` theme.
-*   `cache_seconds` - Sets the cache header manually *(min: 21600, max: 86400)*. မူလတန်ဖိုး : `21600 seconds (6 hours)`.
-*   `locale` - Sets the language in the card, you can check full list of available locales [here](#available-locales). မူလတန်ဖိုး : `en`.
+*   `cache_seconds` - Cache header manual ထားခြင်း *(အနည်းဆုံးတန်ဖိုး : 21600, အများဆုံးတန်ဖိုး : 86400)*. မူလတန်ဖိုး : `21600 seconds (6 hours)`.
+*   `locale` - Card ထဲမှ ဘာသာစကားများကို ပြောင်းလဲခြင်း ၊ လက်ရှိရရှိနိုင်သော ဘာသာစကားများအားလုံးကို [ဤလင့်မှတစ်ဆင့်](#available-locales) ကြည့်နိုင်ပါသည်။ မူလတန်ဖိုး : `en`.
 *   `border_radius` - Card Coner ဝိုင်းခြင်း . မူလတန်ဖိုး : `4.5`.
 
 > [!WARNING]\
@@ -294,7 +295,7 @@ Transparent background အတွက် `transparent` theme ကိုလည်း
 
 ##### Gradient in bg\_color
 
-You can provide multiple comma-separated values in the bg\_color option to render a gradient with the following format:
+Comma များ ခြားထားသော တန်ဖိုးများကို bg\_color နောက်တွင် gradient အား render ရန်အတွက်အောက်ပါ format အတိုင်းရေးနိုင်ပါသည်။
 
     &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 
@@ -366,20 +367,20 @@ You can provide multiple comma-separated values in the bg\_color option to rende
 *   `custom_title` - Card အတွက် စိတ်ကြိုက်ခေါင်းစဉ်တစ်ခု သတ်မှတ်ခြင်း . မူလတန်ဖိုး :  `<username> GitHub Stats`.
 *   `text_bold` - Bold စာသားအသုံးပြုခြင်း *(boolean)*. မူလတန်ဖိုး : `true`.
 *   `disable_animations` - Card အတွင်းရှိ animations အားလုံးကိုဖယ်ရှားခြင်း *(boolean)*. မူလတန်ဖိုး : `false`.
-*   `ring_color` - Rank circle ၏အရောင် *(hex color)*. Defaults to the theme ring color if it exists and otherwise the title color.
-*   `number_format` - Switches between two available formats for displaying the card values `short` (i.e. `6.6k`) and `long` (i.e. `6626`). မူလတန်ဖိုး : `short`.
-*   `show` - Shows [additional items](#showing-additional-individual-stats) on stats card (i.e. `reviews`, `discussions_started`, `discussions_answered`, `prs_merged` or `prs_merged_percentage`) *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
+*   `ring_color` - Rank circle ၏အရောင် *(hex color)*. Theme ထဲမှ ring color ကို မူလတန်ဖိုးအနေနဲ့ ယူပါသည်။ ထိုအရောင်မရှိခဲ့လျင် ခေါင်းစဥ်၏အရောင်ကို မူလတန်ဖိုးအနေဖြင့် ယူပါသည်။
+*   `number_format` - Card ၏တန်ဖိုးကို ပြသပုံ format နှစ်ခုအားပြောင်းခြင်း . `short` (ဥပမာ. `6.6k`) and `long` (ဥပမာ `6626`). မူလတန်ဖိုး : `short`.
+*   `show` - Card အပေါ်တွင် [အသစ်ထပ်တိုး](#showing-additional-individual-stats) ၍ပြခြင်း (ဥပမာ. `reviews`, `discussions_started`, `discussions_answered`, `prs_merged` or `prs_merged_percentage`) *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 
 > [!မှတ်ချက်]\
-> When hide\_rank=`true`, the minimum card width is 270 px + the title length and padding.
+> hide\_rank=`true` ဖြစ်ခဲ့လျင် Card ၏အနိမ့်ဆုံး width သည် 270 နှင့် ခေါင်းစဥ်၏ ပေါင်းထားသောတန်ဖိုးဖြစ်ပါသည်။
 
 #### Repo Card သီးသန့်ရွေးချယ်မှုများ
 
-*   `show_owner` - Shows the repo's owner name *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `show_owner` - Repo ၏ပိုင်ရှင်နာမည်ပြခြင်း *(boolean)*. မူလတန်ဖိုး : `false`.
 
 #### Gist Card Exclusive Options
 
-*   `show_owner` - Shows the gist's owner name *(boolean)*. မူလတန်ဖိုး : `false`.
+*   `show_owner` -  Gist's owner ၏နာမည်ပြခြင်း *(boolean)*. မူလတန်ဖိုး : `false`.
 
 #### Language Card သီးသန့်ရွေးချယ်မှုများ
 

@@ -77,9 +77,9 @@
 - [GitHub Stats ကတ်](#github-stats-card)
     - [Hiding individual stats](#hiding-individual-stats)
     - [Showing additional individual stats](#showing-additional-individual-stats)
-    - [Icons များကိုပြသခြင်း](#showing-icons)
-    - [အပြင်အဆင်များ](#themes)
-    - [စိတ်ကြိုက်ပြင်ဆင်ခြင်း](#customization)
+    - [Icons များကိုပြသခြင်း](#Icons များကိုပြသခြင်)
+    - [အပြင်အဆင်များ](#အပြင်အဆင်များ)
+    - [စိတ်ကြိုက်ပြင်ဆင်ခြင်း](#စိတ်ကြိုက်ပြင်ဆင်ခြင်း)
 - [GitHub Extra Pins](#github-extra-pins)
     - [အသုံးပြုနည်း](#usage)
     - [အစမ်းကြည့်ရန်](#demo)
@@ -273,7 +273,7 @@ Transparent background အတွက် `transparent` theme ကိုလည်း
 
 </details>
 
-### Customization
+### စိတ်ကြိုက်ပြင်ဆင်ခြင်း
 
 သင့် Card များရဲ့ ပုံပန်းအသွင်အပြင်များကို  URL parameter များဖြင့် စိတ်ကြိုက်ပြင်ဆင်နိုင်ပါသည်။  
 

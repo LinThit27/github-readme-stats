@@ -77,7 +77,7 @@
 - [GitHub Stats ကတ်](#github-stats-card)
     - [Hiding individual stats](#hiding-individual-stats)
     - [Showing additional individual stats](#showing-additional-individual-stats)
-    - [Icons များကိုပြသခြင်း](#Icons များကိုပြသခြင်)
+    - [Icons များကိုပြသခြင်း](#Icons%20များကိုပြသခြင်း)
     - [အပြင်အဆင်များ](#အပြင်အဆင်များ)
     - [စိတ်ကြိုက်ပြင်ဆင်ခြင်း](#စိတ်ကြိုက်ပြင်ဆင်ခြင်း)
 - [GitHub Extra Pins](#github-extra-pins)

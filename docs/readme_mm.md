@@ -372,7 +372,7 @@ Comma များ ခြားထားသော တန်ဖိုးမျာ
 *   `show` - Card အပေါ်တွင် [အသစ်ထပ်တိုး](#showing-additional-individual-stats) ၍ပြခြင်း (ဥပမာ. `reviews`, `discussions_started`, `discussions_answered`, `prs_merged` or `prs_merged_percentage`) *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 
 > [!မှတ်ချက်]\
-> hide\_rank=`true` ဖြစ်ခဲ့လျင် Card ၏အနိမ့်ဆုံး width သည် 270 နှင့် ခေါင်းစဥ်၏ ပေါင်းထားသောတန်ဖိုးဖြစ်ပါသည်။
+> hide\_rank=`true` ဖြစ်ခဲ့လျင် Card ၏အနိမ့်ဆုံး width သည် 270px + နှင့် ခေါင်းစဥ်၏ length and padding ပေါင်းထားသောတန်ဖိုးဖြစ်ပါသည်။
 
 #### Repo Card သီးသန့်ရွေးချယ်မှုများ
 
@@ -386,9 +386,9 @@ Comma များ ခြားထားသော တန်ဖိုးမျာ
 
 *   `hide` - Hides the languages specified from the card *(Comma-separated values)*. မူလတန်ဖိုး : `[] (blank array)`.
 *   `hide_title` - *(boolean)*. မူလတန်ဖိုး : `false`.
-*   `layout` - Switches between five available layouts `normal` & `compact` & `donut` & `donut-vertical` & `pie`. မူလတန်ဖိုး : `normal`.
-*   `card_width` - Sets the card's width manually *(number)*. မူလတန်ဖိုး  `300`.
-*   `langs_count` - Shows more languages on the card, between 1-20 *(number)*. မူလတန်ဖိုး : `5` for `normal` and `donut`, `6` for other layouts.
+*   `layout` - Available ဖြစ်သော layouts ၅ခုကြား ပြောင်းလဲခြင်း `normal` & `compact` & `donut` & `donut-vertical` & `pie`. မူလတန်ဖိုး : `normal`.
+*   `card_width` - ကတ်၏ width အား manual သတ်မှတ်ခြင်း *(number)*. မူလတန်ဖိုး  `300`.
+*   `langs_count` - Languages များ ကတ်ပေါ်တွင် ပိုမိုပြသခြင်း (၁ မှ ၂၀ ကြား) *(number)*. မူလတန်ဖိုး : `5` for `normal` and `donut`, `6` for other layouts.
 *   `exclude_repo` - Excludes specified repositories *(Comma-separated values)*. မူလတန်ဖိုး: `[] (blank array)`.
 *   `custom_title` - Sets a custom title for the card *(string)*. မူလတန်ဖိုး `Most Used Languages`.
 *   `disable_animations` - Disables all animations in the card *(boolean)*. မူလတန်ဖိုး : `false`.
